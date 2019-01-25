@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_eighty_eight"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:minHeight="@dimen/dp_eighty_eight">
+
+    <RelativeLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_eighty_eight"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="@dimen/dp_sixteen"
+        android:paddingEnd="@dimen/dp_sixteen">
+
+        <TextView
+            android:id="@+id/englishVocabulary"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_eighty_eight"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="@string/placeholder_sampleVocab" />
+
+        <ImageButton
+            android:id="@+id/playBtn"
+            android:layout_width="@dimen/dp_forty_eight"
+            android:layout_height="@dimen/dp_forty_eight"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_sixteen"
+            android:background="@android:color/white"
+            android:contentDescription="@string/playButtonDescription"
+            android:src="@drawable/baseline_play_circle_outline_black_48" />
+    </RelativeLayout>
+</RelativeLayout>
